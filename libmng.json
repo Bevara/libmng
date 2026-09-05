@@ -1,0 +1,19 @@
+{
+    "name": "libmng",
+    "description": "MNG and JNG decoder",
+    "filters":["mngdec"],
+    "help": "This filter decodes MNG animations and JNG images using libmng, sending one frame per packet with the timing carried by the file.",
+    "support": [
+        "image",
+        "video"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libmng.accessor",
+    "filter_source":{
+        "mngdec" : "dec_mng.c"
+    },
+    "extension":{
+      "mng" : "video",
+      "jng" : "img"
+    },
+    "licence_required":false
+}
