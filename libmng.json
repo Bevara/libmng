@@ -1,6 +1,6 @@
 {
     "name": "libmng",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "MNG and JNG decoder",
     "filters":["mngdec"],
     "help": "This filter decodes MNG animations and JNG images using libmng, sending one frame per packet with the timing carried by the file.",
@@ -16,7 +16,7 @@
       "mng" : "video",
       "jng" : "img"
     },
-    "using": ["solver_minimal_1"],
+    "using": ["solver_minimal_1", "solver_1"],
     "patents": {
         "status": "royalty-free",
         "note": "MNG/JNG",
