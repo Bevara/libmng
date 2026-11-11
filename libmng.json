@@ -2,21 +2,30 @@
     "name": "libmng",
     "version": "1.0.3",
     "description": "MNG and JNG decoder",
-    "filters":["mngdec"],
+    "filters": [
+        "mngdec"
+    ],
     "help": "This filter decodes MNG animations and JNG images using libmng, sending one frame per packet with the timing carried by the file.",
     "support": [
         "image",
         "video"
     ],
-    "sources":"https://bevara.ddns.net/sources/libmng.accessor",
-    "filter_source":{
-        "mngdec" : "dec_mng.c"
+    "sources": "https://bevara.ddns.net/sources/libmng.accessor",
+    "filter_source": {
+        "mngdec": "dec_mng.c"
     },
-    "extension":{
-      "mng" : "video",
-      "jng" : "img"
+    "extension": {
+        "mng": "video",
+        "jng": "img"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_minimal_1.0.1",
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "royalty-free",
         "note": "MNG/JNG",
